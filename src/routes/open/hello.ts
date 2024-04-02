@@ -38,5 +38,39 @@ helloRouter.post('/', (request: Request, response: Response) => {
     });
 });
 
-// "return" the router
+/**
+ * @api {put} /hello Request a Hello World message
+ * @apiName PutHello
+ * @apiGroup Hello
+ *
+ * @apiDescription TL;DR Use the HTTP PUT methods when altering/changing aa exsisting resource on
+ * an http server/service. The HTTP PUT maps to the (U - update) in the acronym CRUD for the
+ * common operations performed on a database.
+ *
+ * @apiSuccess {String} message the String: "Hello, you sent a PUT request"
+ */
+helloRouter.put('/', (request: Request, response: Response) => {
+    response.send({
+        message: 'Hello, you sent a PUT request',
+    });
+});
+
+/**
+ * @api {delete} /hello Request a Hello World message
+ * @apiName DeleteHello
+ * @apiGroup Hello
+ *
+ * @apiDescription TL;DR Use the HTTP DELETE methods when delteing an exsiting resource on
+ * an http server/service. The HTTP DELETE maps to the (D - delete) in the acronym CRUD for the
+ * common operations performed on a database.
+ *
+ * @apiSuccess {String} message the String: "Hello, you sent a DELETE request"
+ */
+helloRouter.post('/', (request: Request, response: Response) => {
+    response.send({
+        message: 'Hello, you sent a DELETE request',
+    });
+});
+
+// Make the router object visible to outside modules
 export { helloRouter };
