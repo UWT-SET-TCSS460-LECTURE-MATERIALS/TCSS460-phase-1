@@ -4,7 +4,7 @@
     "description": "Template for a node/express web service for TCSS 460",
     "main": "dist/app.js",
     "scripts": {
-        "start": "NODE_PATH=./build node build/index.js",
+        "start": "echo \"Error: run locally\" && exit 1",
         "build": "tsc -p .",
         "dev": "nodemon -r dotenv/config src/index.ts",
         "compile-local": "tsc && node -r dotenv/config build/index.js",

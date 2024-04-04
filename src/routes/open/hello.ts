@@ -66,7 +66,7 @@ helloRouter.put('/', (request: Request, response: Response) => {
  *
  * @apiSuccess {String} message the String: "Hello, you sent a DELETE request"
  */
-helloRouter.post('/', (request: Request, response: Response) => {
+helloRouter.delete('/', (request: Request, response: Response) => {
     response.send({
         message: 'Hello, you sent a DELETE request',
     });
