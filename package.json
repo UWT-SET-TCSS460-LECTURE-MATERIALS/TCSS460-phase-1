@@ -18,10 +18,10 @@
     "author": "Charles Bryan",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cfb3/cfb3-tcss4540-labs-23sp"
+        "url": "https://github.com/UWT-SET-TCSS460-LECTURE-MATERIALS/TCSS460-phase-1"
     },
     "engines": {
-        "node": "20.11.1"
+        "node": "20.17.0"
     },
     "license": "ISC",
     "devDependencies": {
