@@ -2,7 +2,7 @@
     "name": "tcss460_node_express_template",
     "version": "1.0.0",
     "description": "Template for a node/express web service for TCSS 460",
-    "main": "dist/app.js",
+    "main": "build/index.js",
     "scripts": {
         "start": "echo \"Error: run locally\" && exit 1",
         "build": "tsc -p .",
