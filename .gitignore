@@ -4,7 +4,7 @@
 /build
 
 # Env Files
-#.env*
+.env*
 
 # Node
 /node_modules
